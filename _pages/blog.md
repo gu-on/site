@@ -1,0 +1,5 @@
+---
+layout: posts
+title: Game Audio Tools & Tips
+permalink: /
+---
