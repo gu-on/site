@@ -56,4 +56,4 @@ plugins:
 #   - vendor/ruby/
 
 include:
-  - _pages/index.md
+  - _pages
