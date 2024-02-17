@@ -27,10 +27,16 @@ description: >- # this means to ignore newlines until "baseurl:"
 # baseurl: "/site" # the subpath of your site, e.g. /blog
 # url: "http://gu-on.com" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: jekyllrb
-github_username: guonaudio
+mastodon_username: guonaudio
+github_username: gu-on
+
+search: true
+search_full_content: true
 
 # Build settings
+markdown: kramdown
 remote_theme: "mmistakes/minimal-mistakes@4.24.0"
+
 plugins:
   - jekyll-feed
   - jekyll-include-cache
@@ -57,3 +63,63 @@ plugins:
 
 include:
   - _pages
+
+author:
+  name : "guonaudio"
+  avatar : "/assets/images/logo.png"
+  bio : "Queer neurodivergent game dev making audio tools and resources to save others from repeating my mistakes."
+  links:
+    - label: "Ko-fi"
+      icon: "fas fa-fw fa-coffee"
+      url: "https://ko-fi.com/guonaudio"
+    - label: "Mastodon"
+      icon: "fab fa-fw fa-mastodon"
+      url: "https://mastodon.gamedev.place/@guonaudio"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/gu-on/"
+
+footer:
+  links:
+    - label: "Ko-fi"
+      icon: "fas fa-fw fa-coffee"
+      url: "https://ko-fi.com/guonaudio"
+    - label: "Mastodon"
+      icon: "fab fa-fw fa-mastodon"
+      url: "https://mastodon.gamedev.place/@guonaudio"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/gu-on/"
+
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      related: true
+      share: false
+      show_date: true
+      toc: true
+      #excerpt: ""
+      header:
+        overlay_filter: 0.25
+        overlay_image: /assets/images/background.png
+        # caption: "textured grey background"
+
+  # _pages
+  - scope:
+      path: "_pages"
+      type: pages
+    values:
+      layout: single
+      classes: wide
+      author_profile: true
+      header:
+        overlay_filter: 0.25
+        overlay_image: /assets/images/background.png
+        # caption: "textured grey background"
