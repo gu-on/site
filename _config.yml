@@ -37,8 +37,18 @@ search_full_content: true
 markdown: kramdown
 remote_theme: "mmistakes/minimal-mistakes@4.24.0"
 
+# Outputting
+permalink: /:categories/:title/
+paginate: 5 # amount of posts to show
+paginate_path: /page:num/
+timezone: Europe/London
+
 plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
   - jekyll-feed
+  - jemoji
   - jekyll-include-cache
 
 # Exclude from processing.
@@ -65,7 +75,7 @@ include:
   - _pages
 
 author:
-  name : "guonaudio"
+  name : "Kevin Doran (he/him)"
   avatar : "/assets/images/logo.png"
   bio : "Queer neurodivergent game dev making audio tools and resources to save others from repeating my mistakes."
   links:
@@ -105,11 +115,9 @@ defaults:
       share: false
       show_date: true
       toc: true
-      #excerpt: ""
       header:
         overlay_filter: 0.25
         overlay_image: /assets/images/background.png
-        # caption: "textured grey background"
 
   # _pages
   - scope:
@@ -122,4 +130,3 @@ defaults:
       header:
         overlay_filter: 0.25
         overlay_image: /assets/images/background.png
-        # caption: "textured grey background"
