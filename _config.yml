@@ -21,12 +21,13 @@
 minimal_mistakes_skin: "dark"
 
 title: guonaudio
+# logo: "logo.png"
 # email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
   Resources and tools for all aspects of game audio~
+favicon: /favicon.ico
 # baseurl: "/site" # the subpath of your site, e.g. /blog
 # url: "http://gu-on.com" # the base hostname & protocol for your site, e.g. http://example.com
-# twitter_username: jekyllrb
 mastodon_username: guonaudio
 github_username: gu-on
 
