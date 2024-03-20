@@ -34,6 +34,8 @@ These blank Items can be used like 2D Regions for rendering purposes.
 
 # GU_Item fader
 
+<img src="{{ site.url }}{{ site.baseurl }}/assets/2024-02-12-gutilitiesplus-doc/gutil_item_fader.gif">
+
 Fades selected Items by the percentage of their length. 
 
 # GU_Item renamer
